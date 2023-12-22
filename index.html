@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=VT323&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/sass/error.scss" />
 </head>
 
 <body class="is-preload">
+    
 
     <!-- Header -->
     <!-- <section id="header">
@@ -21,7 +25,7 @@
             <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
             <!-- <h1 id="logo" class="glitch" style="color: #00FF00;"></h1>
             <span id="cursor" class="cursor"style="color: #00FF00; margin: 3px;">|</span> -->
-        <!-- </header>
+    <!-- </header>
    
         <nav id="nav">
             <ul>
@@ -47,6 +51,8 @@
 
     <!-- Wrapper -->
     <div id="wrapper ">
+        <!-- <video preload="auto" class="background" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/396624/err.mp4" autoplay muted loop></video> -->
+
 
         <!-- Main -->
         <div id="main ">
@@ -54,9 +60,10 @@
             <!-- One -->
             <section id="one">
                 <header class="header-class">
+                    
                     <!-- <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span> -->
                     <h1 id="logo" class="glitch" style="color: #00FF00;"></h1>
-                    <span id="cursor" class="cursor"style="color: #00FF00; margin: 3px;">|</span>
+                    <span id="cursor" class="cursor" style="color: #00FF00; margin: 3px;">|</span>
                 </header>
                 <!-- <div class="image main " data-position="center ">
                     <img src="images/header.gif " alt="error gif header " />
@@ -66,25 +73,50 @@
                         <h2 style="color: Black; ">My Portfolio</h2>
                         <h3> Front End Developer</h3>
                     </header>
-                    <p>Only thing I want to do in life is hug a Panda Bear. Let's build stuff :)</p>
+                    <p>Motivated to actualize projects i'm told are unattainable.</p>
                 </div>
             </section>
 
             <!-- Two -->
             <section id="two">
                 <div class="container ">
-                    <h3>Things I Can Do</h3>
+                    <h3>Things I Can Do and how I do them</h3>
                     <p>Among my many talents and skillset, I can:</p>
-                    <ul class="feature-icons ">
+                    <!-- <ul class="feature-icons ">
                         <li class="icon solid fa-code ">Write all the code</li>
                         <li class="icon solid fa-utensils ">Make mean Japanese Noodles </li>
                         <li class=" icon solid fa-book ">Read books and stuff</li>
                         <li class="icon solid fa-coffee ">Drink alot coffee</li>
                         <li class="icon solid fa-music ">Listen to one song the whole day </li>
                         <li class="icon solid fa-clock ">Watch anime all day</li>
+                    </ul> -->
+                    <ul class="feature-icons">
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                        <li><i class="fab fa-react"></i> React.js</li>
+                        <li><i class="fab fa-node"></i> Node.js</li>
+                        <li><i class="fab fa-react"></i> MUI</li>
+                        <li><i class="fab fa-react"></i> Redux</li>
                     </ul>
                 </div>
             </section>
+
+            <!-- <section class="error-body">
+                <video preload="auto" class="background" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/396624/err.mp4" autoplay muted loop></video>
+                <div class="message">
+                    <h1 t="403">Warning
+                    </h1>
+                    <br></br>
+                    <div class="bottom">
+                        <p>ChatGPT-Web 因技術問題須暫時關閉維護
+                        </br>
+                       ChatGPT-Web got some technical issues Need to be closed
+                        </p>
+                        <a href="#">請等待管理員修復 Please wait for fixing</a>
+                    </div>
+                </div>
+            </section> -->
 
             <!-- Three -->
             <section id="three">
@@ -135,40 +167,65 @@
             <!-- Four -->
             <section id="four">
                 <div class="container">
-                    <h3>Contact Me</h3>
-                    <p>Got an idea you want to actualize? Send me a message!</p>
+                    <!-- <h3>Contact Me</h3>
+                    <p>Got an idea you want to actualize? Send me a message!</p> -->
 
-                    <form method="post " action="# ">
-                        <div class="row gtr-uniform ">
-                            <div class="col-6 col-12-xsmall ">
-                                <input class="form-control" type="text " name="name"
-                                    id="name " placeholder="Name " />
-                                </div>
-                            <div class="col-6 col-12-xsmall ">
-                                <input class="form-control" type="email" name="email" id="email"
-                                    placeholder="Email " />
+                    <div class="window" style="width: 800px">
+                        <div class="title-bar">
+                            <div class="title-bar-text">
+                                Contact Me!
                             </div>
-                            <div class="col-12 ">
-                                <input type="text " name="subject" class="form-control" id="subject "
-                                    placeholder="Subject " />
-                                </div>
-                            <div class="col-12 ">
-                                <textarea name="message " id="message" class="form-control"
-                                    placeholder="Message " rows="6 "></textarea>
-                                </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit " class="primary " value="Send Message " /></li>
-                                    <li><input type="reset " value="Reset Form " /></li>
-                                </ul>
+                            <div class="title-bar-controls">
+                                <button aria-label="Close"></button>
                             </div>
                         </div>
-                    </form>
+                        <form method="post"  class="windows-form">
+                            <div class="row gtr-uniform">
+                                <div class="col-6 col-12-xsmall">
+                                    <input class="windows-input" type="text" name="name" id="name" placeholder="Name" />
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <input class="windows-input" type="email" name="email" id="email"
+                                        placeholder="Email" />
+                                </div>
+                                <div class="col-12">
+                                    <input class="windows-input" type="text" name="subject" id="subject"
+                                        placeholder="Subject" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="windows-textarea" name="message" id="message" placeholder="Message"
+                                        rows="6"></textarea>
+                                </div>
+                                <!-- <input type="text" name="authorizationCode" id="authorizationCode" placeholder="Authorization Code" /> -->
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><button disabled type="submit" class="windows-button primary"
+                                                value="Send Message">Send Message</button></li>
+                                        <li><button type="reset" class="windows-button">Reset Form</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <!-- Window with status bar (initially hidden) -->
+                        <div id="statusWindow" class="window" style="width: 320px; display: none;">
+                            <div class="title-bar">
+                                <div class="title-bar-text">Status Window</div>
+                            </div>
+                            <div class="window-body">
+                                <p>Your form was successfully submitted!</p>
+                            </div>
+                            <div class="status-bar">
+                                <p class="status-bar-field">Press F1 for help</p>
+                                <p class="status-bar-field">Slide 1</p>
+                                <p class="status-bar-field">CPU Usage: 14%</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
-
-
-
         </div>
 
         <!-- Footer -->
