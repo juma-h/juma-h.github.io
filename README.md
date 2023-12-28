@@ -12,3 +12,7 @@ There are a **number of changes to be made**. So ,
  - Tried, hosted and deployed by Netlify
 
 > [![Netlify Status](https://api.netlify.com/api/v1/badges/0e593957-5aa0-41fc-bb44-eabc463b5a63/deploy-status)](https://app.netlify.com/sites/juma-h/deploys)
+
+
+## Version 2.0
+> Total Revamp
