@@ -59,3 +59,21 @@ function submitForm() {
 function showStatusWindow() {
   document.getElementById("statusWindow").style.display = "block";
 }
+
+function updateDateTime() {
+  var now = new Date();
+  
+  // Specify date and time options
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+
+  // Format the date and time
+  var dateTimeString = now.toLocaleString('en-US', options);
+  
+  document.getElementById("date-time").textContent = "Today is  " + dateTimeString;
+}
+
+// Update date and time every second
+setInterval(updateDateTime, 1000);
+
+// Initial update
+updateDateTime();
